@@ -36,7 +36,7 @@
             font-family: verdana; sans serif;
             color: white;
             text-shadow: -4px 0 darkred, 0 4px darkred, 4px 0 darkred, 0 -4px darkred, -12px 12px 8px #000000;
-            font-size: 15px;
+            font-size: 300%;
             font-weight: bold;
             font-variant: small-caps;
             text-align:center
@@ -44,9 +44,23 @@
         #message{
             border: 3px solid white;
             border-radius: 20px;
-            width: 50%;
+            width: 100%;
             padding: 2%;
-            margin: auto
+            margin: auto;
+            
+        }
+        img{
+            width: 80%;
+            height: auto;
+            transform-origin: 50% 50%
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 50%;
+            height: auto;
+            
         }
     </style>
     <title>ScketchZone</title>
@@ -54,8 +68,9 @@
     <link  rel="icon"  href="./favicon.ico"  type="image/x-icon">
   </head>
   <body>
-    <h1  style="font-size: 300%;">DEAD END</h1>
-    <img  style="margin-left: 46px;"  src="./images/YOUSHOULDNTBEHERE.png"> <br>
+    <div class= "container">
+    <h1>DEAD END</h1>
+    <div><img  style="margin-left: 46px;"  src="./images/YOUSHOULDNTBEHERE.png"></div> <br>
     <script>
         document.addEventListener("DOMContentLoaded", (event) => {
         if(window.location.pathname.split('/').pop().match('not_found')){
@@ -76,6 +91,7 @@
         });
     </script>
     <br><div id = "message"></div>
-    <a  style = "padding-left: 47%;" href="javascript:javascript:history.go(-1)">← Get me outta here</a>
+    <div><a  style = "padding-left: 47%;" href="javascript:javascript:history.go(-1)">← Get me outta here</a></div>
+  </div>
   </body>
 </html>
