@@ -40,34 +40,35 @@
             <li id="orig">
               <div id="artRss">
                 <script>
-        $('#artRss').FeedEk({
-        	FeedUrl : 'https://scketcht00n.tumblr.com/tagged/original art/rss',
-	    		MaxCount : 8,
-	    		ShowDesc : true,
-	    		ShowPubDate:true,
-	    		// requires moment.js
-	    		DateFormat:'MM/dd/yyyy',
-	    		DateFormatLang:'en'
-      	});
-        
-        $("#origClicky").click(function () {
-                $(".feedEkList").empty();
-				$('#artRss').FeedEk({
-					FeedUrl: 'https://scketcht00n.tumblr.com/tagged/original art/rss',
-				});
-			});
-        $("#fanClicky").click(function () {
-                $(".feedEkList").empty();
-				$('#artRss').FeedEk({
-					FeedUrl: 'https://scketcht00n.tumblr.com/tagged/fan art/rss',
-				});
-			});
-        $("#commClicky").click(function () {
-                $(".feedEkList").empty();
-				$('#artRss').FeedEk({
-					FeedUrl: 'https://scketcht00n.tumblr.com/tagged/commissions/rss',
-				});
-			});
+                
+                    $('#artRss').FeedEk({
+                        FeedUrl : 'https://scketcht00n.tumblr.com/tagged/original art/rss',
+                            MaxCount : 8,
+                            ShowDesc : true,
+                            ShowPubDate:true,
+                            // requires moment.js
+                            DateFormat:'MM/dd/yyyy',
+                            DateFormatLang:'en'
+                    });
+                    
+                    $("#origClicky").click(function () {
+                            $(".commScript").remove();
+                            $('#artRss').FeedEk({
+                                FeedUrl: 'https://scketcht00n.tumblr.com/tagged/original art/rss',
+                            });
+                        });
+                    $("#fanClicky").click(function () {
+                            $(".commScript").remove();
+                            $('#artRss').FeedEk({
+                                FeedUrl: 'https://scketcht00n.tumblr.com/tagged/fan art/rss',
+                            });
+                        });
+                    $("#commClicky").click(function () {
+                            $(".commScript").remove();
+                            $('#artRss').FeedEk({
+                                FeedUrl: 'https://scketcht00n.tumblr.com/tagged/commissions/rss',
+                            });
+                        });
       </script> </div>
           </ul>
         </div>
