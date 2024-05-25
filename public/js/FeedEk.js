@@ -96,12 +96,16 @@
                     }
                             
                     $(".kmnt").unbind().click(function() {
-                    
-                        $("#commento").detach().appendTo($(this).next("p"));
-                        window.commento.reInit({
-                            pageId: $(this).attr("id"),
-                        });
-                        $("#commento").attr("style","display:show;");
+                        //console.log($(this).next("p").parent().attr("open"));
+                        if(!$(this).next("p").parent().attr("open")){
+                            $("#commento").detach().appendTo($(this).next("p"));
+                            window.commento.reInit({
+                                pageId: $(this).attr("id"),
+                            });
+                            $("#commento").attr("style","display:show;");
+                        }else{
+                            $("#commento").empty();
+                        };
                     });
                     
                 });
