@@ -21,6 +21,13 @@
         
 		$("#" + id).append('<img src="loader.gif"/>');
         
+        
+        setTimeout(function (){
+            if (def.FeedUrl == ""){
+                $("#" + id).append("<br>(Pssst, choose one of the buttons from the menu above...)");
+            };
+        }, 2500);
+        
 		$.ajax({
 			url: "https://feed.jquery-plugins.net/load?url=" + encodeURIComponent(def.FeedUrl) + "&maxCount=" + def.MaxCount + "&dateCulture=" + def.DateFormatLang + "&dateFormat=" + def.DateFormat,
 			dataType: "json",
