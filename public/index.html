@@ -40,9 +40,10 @@
             <li id="orig">
               <div id="artRss">
                 <script>
-                
+                    var rssUrl = window.name;
+                                        
                     $('#artRss').FeedEk({
-                        FeedUrl : 'https://scketcht00n.tumblr.com/tagged/original art/rss',
+                        FeedUrl : rssUrl,
                             MaxCount : 8,
                             ShowDesc : true,
                             ShowPubDate:true,
@@ -52,25 +53,16 @@
                     });
                     
                     $("#origClicky").click(function () {
-                            $("#artRss").empty();
-                            $(".commScript").remove();
-                            $('#artRss').FeedEk({
-                                FeedUrl: 'https://scketcht00n.tumblr.com/tagged/original art/rss',
-                            });
+                            window.name = "https://scketcht00n.tumblr.com/tagged/original art/rss";
+                            location.reload();
                         });
                     $("#fanClicky").click(function () {
-                            $("#artRss").empty();
-                            $(".commScript").remove();
-                            $('#artRss').FeedEk({
-                                FeedUrl: 'https://scketcht00n.tumblr.com/tagged/fan art/rss',
-                            });
+                            window.name = "https://scketcht00n.tumblr.com/tagged/fan art/rss";
+                            location.reload();
                         });
                     $("#commClicky").click(function () {
-                            $("#artRss").empty();
-                            $(".commScript").remove();
-                            $('#artRss').FeedEk({
-                                FeedUrl: 'https://scketcht00n.tumblr.com/tagged/commissions/rss',
-                            });
+                            window.name = "https://scketcht00n.tumblr.com/tagged/commissions/rss";
+                            location.reload();
                         });
       </script> </div>
           </ul>

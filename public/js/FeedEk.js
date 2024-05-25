@@ -103,8 +103,6 @@
                                 pageId: $(this).attr("id"),
                             });
                             $("#commento").attr("style","display:show;");
-                        }else{
-                            $("#commento").empty();
                         };
                     });
                     
