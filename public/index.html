@@ -52,18 +52,21 @@
                     });
                     
                     $("#origClicky").click(function () {
+                            $("#artRss").empty();
                             $(".commScript").remove();
                             $('#artRss').FeedEk({
                                 FeedUrl: 'https://scketcht00n.tumblr.com/tagged/original art/rss',
                             });
                         });
                     $("#fanClicky").click(function () {
+                            $("#artRss").empty();
                             $(".commScript").remove();
                             $('#artRss').FeedEk({
                                 FeedUrl: 'https://scketcht00n.tumblr.com/tagged/fan art/rss',
                             });
                         });
                     $("#commClicky").click(function () {
+                            $("#artRss").empty();
                             $(".commScript").remove();
                             $('#artRss').FeedEk({
                                 FeedUrl: 'https://scketcht00n.tumblr.com/tagged/commissions/rss',
