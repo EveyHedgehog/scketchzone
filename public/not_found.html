@@ -3,41 +3,79 @@
   <head>
     <meta  content="text/html; charset=UTF-8"  http-equiv="content-type">
     <style  type="text/css">
-      a:visited{
-  text-decoration: none;
-  color:white;
-}
-a:link { text-decoration: none; color: white; }
-a:visited { text-decoration: none; color: white; }
-A:active
-{ text-decoration: none; color: white; }
-A:hover { text-decoration: none; color: white; }
-body {
-color: white;
-border-width: 0px;
-padding: 0px;
-margin: 0px;
-font-size: 90%;
-background-color: black;
-  text-align: center;
-}
-h1{ 
-font-family: verdana; sans serif;
-color: white;
-text-shadow: -4px 0 darkred, 0 4px darkred, 4px 0 darkred, 0 -4px darkred, -12px 12px 8px #000000;
-font-size: 15px;
-font-weight: bold;
-font-variant: small-caps;
-text-align:center;
-}
+        a:visited{
+            text-decoration: none;
+            color:white;
+        }
+        a:link{
+            text-decoration: none;
+            color: white;
+        }
+        a:visited{
+            text-decoration: none; 
+            color: white;
+        }
+        A:active{
+            text-decoration: none; 
+            color: white;
+        }
+        A:hover {
+            text-decoration: none; 
+            color: white;
+        }
+        body {
+            color: white;
+            border-width: 0px;
+            padding: 0px;
+            margin: 0px;
+            font-size: 120%;
+            background-color: black;
+            text-align: center
+        }
+        h1{ 
+            font-family: verdana; sans serif;
+            color: white;
+            text-shadow: -4px 0 darkred, 0 4px darkred, 4px 0 darkred, 0 -4px darkred, -12px 12px 8px #000000;
+            font-size: 15px;
+            font-weight: bold;
+            font-variant: small-caps;
+            text-align:center
+        }
+        #message{
+            border: 3px solid white;
+            border-radius: 20px;
+            width: 50%;
+            padding: 2%;
+            margin: auto
+        }
     </style>
     <title>ScketchZone</title>
     <link  rel="shortcut icon"  href="./favicon.ico"  type="image/x-icon">
     <link  rel="icon"  href="./favicon.ico"  type="image/x-icon">
   </head>
   <body>
-    <h1  style="font-size: 50px;">DEAD END</h1>
+    <h1  style="font-size: 300%;">DEAD END</h1>
     <img  style="margin-left: 46px;"  src="./images/YOUSHOULDNTBEHERE.png"> <br>
-    <a  href="javascript:javascript:history.go(-1)">← Get me outta here</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+        if(window.location.pathname.split('/').pop().match('not_found')){
+            document.getElementById("message").innerHTML = "Huh? What are you doing here?";
+        }else if(window.location.pathname.split('/').pop().match('egg')){
+            document.getElementById("message").innerHTML = "* You feel a soft oval object in your hands<br>* You look down, but nothing is there";
+        }else if(window.location.pathname.split('/').pop().match('knuckles')){
+            document.getElementById("message").innerHTML = "No way? No way! No way? No way!";
+        }else if(window.location.pathname.split('/').pop().match('sonic')){
+            document.getElementById("message").innerHTML = "<iframe width='110' height='200' src='https://www.myinstants.com/instant/here-comes-a-billboard-96689/embed/' frameborder='0' scrolling='no'></iframe>";
+        }else if(window.location.pathname.split('/').pop().match('ball')){
+            document.getElementById("message").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/O8Uzdrg9dWg' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";
+        }else if(window.location.pathname.split('/').pop().match('tamago')){
+            document.getElementById("message").innerHTML = "<iframe width='560' height='315' src='https://www.youtube.com/embed/kjPD-JsInyU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";
+        }else{
+            document.getElementById("message").innerHTML = "Nothing to see here! (This page or directory doesn't exist)";
+        };
+        });
+    </script>
+    <br><div id = "message"></div>
+    <a  style = "padding-left: 47%;" href="javascript:javascript:history.go(-1)">← Get me outta here</a>
   </body>
 </html>
