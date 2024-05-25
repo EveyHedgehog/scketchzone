@@ -1,0 +1,35 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <div style="margin-left: 80px; line-height: 150px; " id="leftbar"> <a class="tooltips"
+
+        href="commission.html"><img src="images/moneybags.png"><span>Commissions!</span></a>
+      <br>
+      <a class="tooltips" href="about.html"><img src="images/whodat.png"><span>About
+          Me!</span></a> <br>
+      <a class="tooltips" href="portfolio.html"><img src="images/ssfolio.png"><span>Portfolio!</span></a>
+      <br>
+      <a class="tooltips" href="https://www.teepublic.com/user/eveyhedgehog"><img
+
+          src="images/shirtjam.png"><span>Shirts!</span></a> </div>
+    <div style="margin-top: -519px; margin-right: 40px; line-height: 150px;" id="ritebar">
+      <a class="tooltips" target="_blank" href="http://twitter.com/EveyWorlds"><img
+
+          src="images/tweeter.png"><span>Twitter!</span></a> <br>
+      <a class="tooltips" target="_blank" href="http://scketcht00n.tumblr.com"><img
+
+          src="images/toombr.png"><span>Tumblr!</span></a> <br>
+      <a class="tooltips" target="_blank" href="http://evilsonic2.deviantart.com"><img
+
+          src="images/deevy.png"><span>deviantArt!</span></a> <br>
+      <a class="tooltips" href="https://www.youtube.com/channel/UCIHkis_UMWzbPraQzpzCiUQ"><img
+
+          src="images/toobin.png"><span>YouTube! </span></a> <br>
+      <a class="tooltips" target="_blank" href="https://www.weasyl.com/%7Eevilsonic"><img
+
+          src="images/woosyl.png"><span>Weasyl!</span></a> <br>
+    </div>
+  </body>
+</html>

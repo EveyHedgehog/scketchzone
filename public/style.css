@@ -1,0 +1,447 @@
+a:link{
+
+	text-decoration: none;
+	color: #32296C;
+
+}
+a:visited{
+
+	text-decoration: none;
+	color: #32296C;
+
+}
+a:active{
+
+	text-decoration: none;
+	color: #32296C;
+
+}
+a:hover{
+
+	text-decoration: none;
+	color: #7377B8;
+
+}
+body{
+
+	color: #255078;
+	border-width: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Averia Libre';
+	font-size: 90%;
+	background-color: #345DE2;
+
+}
+/* For the news feed */
+ul{
+
+	list-style: none;
+	padding-left: 0px;
+
+}
+ol{
+	
+	list-style: none;
+	padding-left: 0px;
+	
+}
+#content{
+	
+	width: 720px;
+	margin: 0 auto;
+	text-align: left;
+	
+}
+.wrapper{
+	
+	overflow: hidden;
+	width: 1000px;
+	position: relative;
+	background-position: up left;
+	top: 10px;
+	
+}
+#banner{
+	
+	min-width: 800px;
+	padding: 5px;
+	min-height: 300px;
+	background-image: url(./images/banhammer.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: relative;
+	z-index: 1;
+	
+}
+.logolink{
+	
+	position: absolute;
+	left: 400px;
+	margin: 0 auto;
+	width: 800px;
+	height: 300px;
+	top: 0;
+	z-index: 2;
+	
+}
+/* Might remove this... */
+#please{
+	
+	padding-bottom: 20px;
+	
+}
+#leftbar{
+	
+	color: #97A6C3;
+	width: 150px;
+	min-height: 519px;
+	word-wrap: break-word;
+	
+}
+#ritebar{
+	
+	color: #97A6C3;
+	width: 150px;
+	float: right;
+	min-height: 519px;
+	
+}
+#postarea{
+	
+	color: #265886;
+	text-align: center;
+	float: up;
+	padding-bottom: 55px;
+	margin-left: 222px;
+	top: 0px;
+	left: -442px;
+	width: 588px;
+	margin-top: -524px;
+	min-height: 1500px;
+	background-color: #C9E0EC;
+	background-image: url(./images/wellinever.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	
+}
+#porfolio #postarea{
+	
+	color: #265886;
+	text-align: center;
+	float: up;
+	padding-bottom: 55px;
+	margin-left: 222px;
+	top: 0px; 
+	left: -442px; 
+	width: 588px;
+	margin-top: -524px;
+	min-height: 1500px;
+	background-color: #C9E0EC;
+	background-image: url(./images/wellinever.png); background-repeat: repeat-x;
+	background-position: left bottom;
+	
+}
+#disclaimer{
+	
+	color: #255078;
+	margin-top: 10px;
+	padding: 5px;
+	min-width: 800px;
+	min-height: 90px;
+	text-shadow: -1px 0 #3627C1, 0 1px #3627C1, 1px 0 #3627C1, 0 -1px #3627C1, -3px 3px 2px #CAE1ED;
+	text-align: center;
+	
+}
+#spangles{
+	
+	background-image: url(./images/shiro.png);
+	background-repeat: repeat-x;
+	height: 47px;
+	
+}
+h1{ 
+
+	font-family: verdana; sans serif;
+	color: #255078;
+	text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue, -3px 3px 2px #000000;
+	font-size: 15px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align:center;
+	
+}
+h2{ 
+	font-family: verdana; sans serif;
+	color: #C9E0EC;
+	text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue, -3px 3px 2px #000000;
+	font-size: 15px;
+	font-weight: bold;
+	font-variant: small-caps;
+	
+	
+}
+p.hide{
+	
+	opacity: 0.1;
+	
+}
+/* Mouseover to see words, wow! */
+a.tooltips{
+
+	position: absolute;
+	display: inline;
+
+}
+a.tooltips span{
+	
+	position: absolute;
+	top: -20px;
+	width: 140px;
+	color: #C5CEAB;
+	background: #DC4D3A;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	visibility: hidden;
+	border-radius: 6px;
+	box-shadow: -3px 3px 2px #907D96;
+
+}
+a:hover.tooltips{
+	
+	-webkit-box-shadow: 0px 0px 12px rgba(52,93,226,0.89); 
+	box-shadow: 0px 0px 12px rgba(52,93,226,0.89);
+	
+}
+a.tooltips span:after{
+	
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -8px;
+	width: 0;
+	height: 0;
+	border-top: 8px solid #DC4D3A;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	
+}
+a:hover.tooltips span{
+	
+	visibility: visible;
+	opacity: 0.8;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -70px;
+	margin-bottom: 115px;
+	z-index: 999;
+}
+.isee{
+	
+	display: none;
+	
+}
+.peekaboo:hover .isee{
+	
+	display: block;
+
+}
+#hooder{
+	
+	background-color: #DC4D3A;
+	min-height: 160px;
+	background-image: url(./images/whitesofyoureyes.png), url(./images/whitesofyoureyes.png), url(./images/hoopa.png); background-repeat: repeat-x, repeat-x, repeat-x;
+	background-position: left top, left bottom, center;
+	text-align: center;
+	box-sizing: border-box;
+	
+}
+#hooder h2{
+	
+	position: absolute;
+	padding-top: 55px;
+	width: 60%;
+	
+}
+#tumblrfeed{
+	
+	overflow: hidden;
+	height: auto;
+	
+}
+.center{
+	
+	margin-left: 14px;
+	width: 50%;
+	padding: 2px;
+	
+}
+/* Thanks to DivTable.com */
+#commission .divTable{
+	
+	display: table;
+	height: 100%;
+	width: 100%;
+	
+}
+#commission  .divTableRow {
+	
+	display: table-row;
+	padding: 3px 10px;
+	min-height: 436px;
+	max-height: 436px;
+	min-width: 248px;
+	max-width: 248px;
+	
+}
+.imageslot {
+	
+	border-right: 1px solid #C9E0EC;
+	min-height: 436px;
+	max-height: 436px;
+	min-width: 248px;
+	max-width: 248px;
+	text-align: center;
+	color: #fff;
+	background-color: #000;
+	display: table-cell;
+	padding: 3px 10px;
+	
+}
+.imageslot img {
+	
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+} 
+.infobox {
+	
+	border-right: 1px solid #C9E0EC;
+	background-color: #345DE2;
+	min-height: 200px;
+	color: #C9E0EC;
+	display: table-cell;
+	padding: 3px 10px;
+	
+}
+#commission  .divTableBody {
+	
+	display: table-row-group;
+	
+}
+#portfolio .divTable{
+	
+	display: table;
+	width: 100%;
+	
+}
+#portfolio .divTableRow {
+	
+	display: table-row;
+	
+}
+#portfolio .divTableHeading {
+	
+	background-color: #EEE;
+	display: table-header-group;
+	
+}
+#portfolio .divTableCell {
+	
+	border: 0px solid #999999;
+	background-color: #0c0c0c;
+	width: 316px;
+	height: 316px;
+	max-width: 316px;
+	max-height: 316px;
+	background-size: cover;
+	display: table-cell;
+	
+}
+#portfolio .divTableHead {
+	
+	border: 0px solid #999999;
+	background-color: black;
+	display: table-cell;
+	padding: 3px 10px;
+	
+}
+#portfolio .divTableHeading {
+	
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+	
+}
+#portfolio .divTableFoot {
+
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold
+	
+}
+#portfolio .divTableBody {
+	
+	display: table-row-group;
+	
+}
+/* End DivTable stuff */
+.fooder {
+	
+	border-right: 1px solid #C9E0EC;
+	background-image: url(./images/superstar.png);
+	display: table-cell;
+	color: #C9E0EC;
+	background-repeat: repeat-x;
+	height: 47px;
+	
+}
+.hadder {
+	
+	border-right: 1px solid #C9E0EC;
+	background-color: #DC4D3A;
+	height: 64px;
+	display: table-cell;
+	background-image: url(./images/hoopa.png); 
+	background-repeat: repeat-x;
+	
+}
+.navibutton {
+	
+	background-color: #000;
+	color: #C9E0EC;
+	position: relative;
+	padding: 5px;
+	align: center;
+	z-index: 1;
+	
+}
+.navibutton .left {
+	
+	position: absolute;
+	top: 200px;
+	left: 25%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(-0%,-50%);
+	
+}
+.navibutton .right {
+	
+	position: absolute;
+	top: 200px;
+	right: 49%;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%)
+    
+}
+    
+.rssButt{
+    
+    cursor: pointer;
+	
+}

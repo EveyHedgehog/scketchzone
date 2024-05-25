@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<a rel="me" style="position:relative;display:none;"href="https://mastodon.gamedev.place/@eveyhedgehog">Mastodon</a>
+    <link href="https://fonts.googleapis.com/css?family=Averia%20Libre" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>ScketchZone</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link href="css/FeedEk.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/FeedEk.js"></script>
+    <script type="text/javascript" src="./js/moment.js"></script>
+    <script type="text/javascript" src="./js/mysides.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div style="height: 372px; margin-left: -22px; width: 828px;" id="banner"><a
+
+          href="./index.html"> <span style="margin-left: -378px; height: 378px;"
+
+            class="logolink"></span> </a></div>
+      <div style="width: 1008px; margin-left: -126px;" class="wrapper">
+        <div style="margin-left: 80px; width: 888px;" id="spangles"><br>
+        </div>
+        <div id="mysides"></div>
+        <div style="margin-left: 230px; margin-top: -519px;" id="postarea">
+          <div id="hooder"><img
+
+                src="./images/donutsteel.png" alt="Original Art" class = "rssButt" id = "origClicky"><img
+
+                src="./images/fanharder.png" alt="Fan Art" class = "rssButt" id = "fanClicky"><img
+
+                src="./images/imaginethefullword.png" alt="Commissioned Art" class = "rssButt" id = "commClicky"></div>
+          <br>
+		  <a href="https://scketcht00n.tumblr.com/rss"><img src="./images/rss.png" style="width: 5%;height: auto;"></a>
+		  You can leave a comment!<br>
+          <ul id="tumblrfeed">
+            <li id="orig">
+              <div id="artRss">
+                <script>
+        $('#artRss').FeedEk({
+        	FeedUrl : 'https://scketcht00n.tumblr.com/tagged/original art/rss',
+	    		MaxCount : 8,
+	    		ShowDesc : true,
+	    		ShowPubDate:true,
+	    		// requires moment.js
+	    		DateFormat:'MM/dd/yyyy',
+	    		DateFormatLang:'en'
+      	});
+        
+        $("#origClicky").click(function () {
+                $(".feedEkList").empty();
+				$('#artRss').FeedEk({
+					FeedUrl: 'https://scketcht00n.tumblr.com/tagged/original art/rss',
+				});
+			});
+        $("#fanClicky").click(function () {
+                $(".feedEkList").empty();
+				$('#artRss').FeedEk({
+					FeedUrl: 'https://scketcht00n.tumblr.com/tagged/fan art/rss',
+				});
+			});
+        $("#commClicky").click(function () {
+                $(".feedEkList").empty();
+				$('#artRss').FeedEk({
+					FeedUrl: 'https://scketcht00n.tumblr.com/tagged/commissions/rss',
+				});
+			});
+      </script> </div>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="margin-left: -6px;" id="disclaimer">All artwork on this site
+        is made by Jade Brochard ("Evil Sonic"), unless otherwise stated.</div>
+    </div>
+  </body>
+</html>

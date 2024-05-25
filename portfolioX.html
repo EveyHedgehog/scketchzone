@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <style type="text/css">
+a:visited{
+  text-decoration: none;
+  color:#21EDFF
+}
+a:link { text-decoration: none; color: #32296C; }
+a:visited { text-decoration: none; color: #32296C; }
+A:active
+{ text-decoration: none; color: #32296C; }
+A:hover { text-decoration: none; color: #7377B8; }
+body {
+color: #255078;
+border-width: 0px;
+padding: 0px;
+margin: 0px;
+font-size: 90%;
+background-color: #345DE2;
+}
+ul {
+    list-style: none;
+  padding-left: 0px;
+}
+ol{
+    list-style: none;
+  padding-left: 0px;
+}
+#content {
+width: 720px;
+margin: 0 auto;
+text-align: left;
+}
+.wrapper{
+overflow: hidden;
+width:1000px;
+position:relative;
+background-position: up left;
+top: 10px;
+}
+#banner{
+min-width: 800px;
+padding: 5px;
+min-height: 300px;
+background-image: url(images/banhammer.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+  position: relative;
+z-index= -1;
+}
+.logolink{
+position:absolute; 
+left: 400px;
+margin: 0 auto;
+width:800px;
+height:300px;
+top:0;
+z-index: 1;
+
+/* edit: fixes overlap error in IE7/8, 
+   make sure you have an empty gif 
+  background-image: url('empty.gif');*/
+}
+#please{
+/* background-color: red; */
+  padding-bottom: 20px;
+}                    
+#leftbar{
+color: #97A6C3;
+width: 150px;
+min-height: 519px;
+}
+#ritebar{
+color: #97A6C3;
+width: 150px;
+float:right;
+min-height: 519px;
+}
+#postarea{
+color: #265886;
+text-align: center;
+float: up;
+padding-bottom: 55px;
+margin-left: 222px;
+top: 0px; 
+left: -442px; 
+width: 588px;
+margin-top: -524px;
+min-height: 1500px;
+background-color: #C9E0EC;
+  background-image: url(images/wellinever.png); background-repeat: repeat-x;
+background-position: left bottom;
+}
+#disclaimer{
+color: #255078;
+margin-top: 10px;
+padding: 5px;
+min-width: 800px;
+min-height: 90px;
+text-shadow: -1px 0 #3627C1, 0 1px #3627C1, 1px 0 #3627C1, 0 -1px #3627C1, -3px 3px 2px #000000;
+text-align:center;
+}
+#spangles{
+background-image: url(images/shiro.png);
+background-repeat: repeat-x;
+height: 47px;
+}
+h1{ 
+font-family: verdana; sans serif;
+color: #255078;
+text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue, -3px 3px 2px #000000;
+font-size: 15px;
+font-weight: bold;
+font-variant: small-caps;
+text-align:center;
+}
+      h2{ 
+font-family: verdana; sans serif;
+color: #C9E0EC;
+text-shadow: -1px 0 darkblue, 0 1px darkblue, 1px 0 darkblue, 0 -1px darkblue, -3px 3px 2px #000000;
+font-size: 15px;
+font-weight: bold;
+font-variant: small-caps;
+position: absolute;
+text-align:center;
+top: 120px;
+      }
+
+/* Blargle */
+p.hide {
+opacity: 0.1;
+}
+        a.tooltips {
+  position: absolute;
+  display: inline;
+}
+a.tooltips span {
+  position: absolute;
+  width:140px;
+  color: #C5CEAB;
+  background: #DC4D3A;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+  box-shadow: -3px 3px 2px #907D96;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #DC4D3A;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -70px;
+  margin-bottom: 115px;
+  z-index: 999;
+}
+.isee{ 
+display: none;
+}
+.peekaboo:hover .isee{
+display : block;
+}
+#hooder{
+background-color: #DC4D3A;
+min-height: 160px;
+background-image: url(images/whitesofyoureyes.png), url(images/whitesofyoureyes.png), url(images/hoopa.png); background-repeat: repeat-x, repeat-x, repeat-x;
+background-position: left top, left bottom, center;
+}
+      #tumblrfeed {
+	overflow: hidden;
+        height: auto;
+}
+/* DivTable.com */
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 0px solid #999999;
+  background-color: black;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"
+type="text/javascript"></script>
+    <!--script src="js/jquery.lint.js" type="text/javascript" charset="utf-8"></script-->
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen"
+      title="prettyPhoto main stylesheet" charset="utf-8">
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+    <title>ScketchZone</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div id="content">
+      <div style="height: 372px; margin-left: -22px; width: 828px;" id="banner"><a
+          href="index.html"> <span style="margin-left: -378px; height: 378px;"
+            class="logolink"></span> </a></div>
+      <div style="width: 1008px; margin-left: -126px;" class="wrapper">
+        <div style="margin-left: 80px; width: 888px;" id="spangles"><br>
+        </div>
+        <div style="margin-left: 80px; margin-top: 0px;" id="leftbar"><a class="tooltips"
+            href="commission.html"><img src="images/moneybags.png"><span>Commissions!</span></a><br>
+          <a style="margin-top: 136px;" class="tooltips" href="about.html"><img
+              style="margin-top: -4px;" src="images/whodat.png"><span>About Me!</span></a>
+        </div>
+        <div style="margin-top: -519px; margin-left: -158px;" id="ritebar"><a style="margin-left: -40px;"
+            class="tooltips" target="_blank" href="http://twitter.com/EveyHedgehog"><img
+              src="images/tweeter.png"><span>Twitter!</span></a><br>
+          <a style="margin-top: 136px; margin-left: -40px;" class="tooltips" target="_blank"
+            href="http://scketcht00n.tumblr.com"><img style="margin-top: -4px;"
+              src="images/toombr.png"><span>Tumblr!</span></a><br>
+          <a style="margin-top: 268px; margin-left: -40px;" class="tooltips" target="_blank"
+            href="http://evilsonic2.deviantart.com"><img style="margin-top: -4px;"
+              src="images/deevy.png"><span>deviantArt!</span></a><br>
+          <a style="margin-top: 400px; margin-left: -40px;" class="tooltips" href="https://www.youtube.com/channel/UCIHkis_UMWzbPraQzpzCiUQ"><img
+              style="margin-top: -4px;" src="images/toobin.png"><span>YouTube!</span></a><br>
+          <a style="margin-top: 532px; margin-left: -40px;" class="tooltips" target="_blank"
+            href="https://www.weasyl.com/%7Eevilsonic"><img style="margin-top: -4px;"
+              src="images/woosyl.png"><span>Weasyl!</span></a><br>
+        </div>
+        <div style="margin-left: 230px; margin-top: -519px;" id="postarea">
+          <div id="hooder">
+            <h2 style="top: 102px; left: 478px;">PORTFOLIO</h2>
+          </div>
+          <div class="divTable">
+            <div class="divTableBody">
+              <div class="divTableRow">
+                <div class="divTableCell"><a href="images/monstermagician.png" rel="prettyPhoto"
+                    title="MONSTER MAGICIAN (12/21/2016)&lt;br&gt;Zephyr is a skunk who summons monsters for fun!"><img
+                      src="images/monstermagician.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+                <div class="divTableCell"><a href="images/memyselfiandalsome.png"
+                    rel="prettyPhoto" title="ME, MYSELF, I, AND ALSO ME (1/29/2017)&lt;br&gt;Characters I use as myself. Blue cat hat is my original character, while the others are characters based off of properties owned by SEGA, Nintendo, and Game Freak."><img
+                      src="images/memyselfiandalsome.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell"> <a href="images/electroenergyredraw.png"
+                    rel="prettyPhoto" title="ELECTRO ENERGY BG REDRAW (5/6/2016)&lt;br&gt;Redraw of Electro Energy's background."><img
+                      src="images/electroenergyredraw.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+                <div class="divTableCell"> <a href="images/horrorsprite.png" rel="prettyPhoto"
+                    title="HORROR-THEMED AREA (3/10/2016)&lt;br&gt;Spritework created for a college class."><img
+                      src="images/horrorsprite.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell"><a href="images/vampirepals.png" rel="prettyPhoto"
+                    title="VAMPIRE PALS (9/2/2015)&lt;br&gt;Kelton and Adelice"><img
+                      src="images/vampirepals.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+                <div class="divTableCell"> <a href="images/azurite.png" rel="prettyPhoto"
+                    title="AZURITE (1/30/2015)&lt;br&gt;Don't get on their bad side!"><img
+                      src="images/azurite.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+              </div>
+              <div class="divTableRow">
+                <div class="divTableCell"> <a href="images/runawaybrain.png" rel="prettyPhoto"
+                    title="RUNAWAY BRAIN (10/31/2014)&lt;br&gt;Brain switching!"><img
+                      src="images/runawaybrain.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+                <div class="divTableCell"> <a href="images/grumalwin.png" rel="prettyPhoto"
+                    title="GRUMAL WIN SCREEN (8/6/2014)&lt;br&gt;The thanks screen for COSMIC CLASH when you play as a Grumal"><img
+                      src="images/grumalwin.png" style="max-height: 100%; max-width: 100%; padding 10px;"></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- DivTable.com --> </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="margin-left: -6px;" id="disclaimer">All artwork on this site
+        is made by Jade Brochard ("Evil Sonic"), unless otherwise stated.</div>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script> </body>
+</html>

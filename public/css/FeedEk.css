@@ -1,0 +1,60 @@
+.feedEkList{
+	width: 450px; 
+	list-style: none outside none;
+	background-color: transparent; 
+	border: 0px solid #D3CAD7; 
+	padding: 4px 6px; 
+	color: #3E3E3E;
+	}
+.feedEkList li{
+	border-bottom:1px solid #D3CAD7; 
+	padding: 5px;
+	}
+.feedEkList li:last-child{
+	border-bottom: none;
+	}
+.itemTitle{
+	background-image: url("../images/hoopa.png");
+	background-repeat: repeat-x;
+	width: 568px;
+	background-size: contain;
+	padding: 3px; 
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+.itemContent{
+	background-color: #345DE2; 
+	padding: 5px;
+	padding-top: 15px;
+	margin-top: 0px; 
+	min-height: 100px; 
+	background-image: url("../images/superstar.png"); 
+	background-repeat: repeat-x; 
+	background-position: left bottom; 
+	width: 536px; 
+	margin-left: 12px; 
+	color: #C9E0EC;
+	padding-bottom: 50px;
+	text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.itemTitle a{
+	font-weight: bold; 
+	color: #32296C !important; 
+	text-decoration: none;
+	}
+.itemTitle a:hover{ 
+	text-decoration: underline; 
+	}
+.itemDate{
+	font-size: 11px;
+	color: #C9E0EC;
+	position: absolute;
+	margin-left: 20px;
+	} 
+	
+	
