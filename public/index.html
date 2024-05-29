@@ -13,6 +13,7 @@
     <script type="text/javascript" src="./js/FeedEk.js"></script>
     <script type="text/javascript" src="./js/moment.js"></script>
     <script type="text/javascript" src="./js/mysides.js"></script>
+    <script type="text/javascript" src="./js/kmntcheck.js"></script>
   </head>
   <body>
     <div id="content">
@@ -35,11 +36,13 @@
                 src="./images/imaginethefullword.png" alt="Commissioned Art" class = "rssButt" id = "commClicky"></div>
           <br>
 		  <a href="https://scketcht00n.tumblr.com/rss"><img src="./images/rss.png" style="width: 5%;height: auto;"></a>
-		  You can leave a comment!<br>
+		  <div id= "status">You can leave a comment!</div>
           <ul id="tumblrfeed">
             <li id="orig">
               <div id="artRss">
                 <script>
+                    pingURL();
+                    
                     var rssUrl = window.name;
                                         
                     $('#artRss').FeedEk({
