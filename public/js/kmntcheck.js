@@ -24,10 +24,10 @@ function pingURL() {
             document.getElementById("status").innerHTML = "You can leave a comment, they're on!"; 
         }, 
         400: function (response) { 
-            document.getElementById("status").innerHTML = "You can't leave a comment, they're off!";
+            document.getElementById("status").innerHTML = "You can't leave a comment, they're offline!";
         }, 
         0: function (response) { 
-            document.getElementById("status").innerHTML = "You can't leave a comment, they're off!";
+            document.getElementById("status").innerHTML = "You can't leave a comment, they're offline!";
         }, 
         }, 
     }; 
