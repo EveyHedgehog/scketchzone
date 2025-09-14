@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<a rel="me" style="position:relative;display:none;"href="https://mastodon.gamedev.place/@eveyhedgehog">Mastodon</a>
+  </head>
+  <body><a rel="me" style="position:relative;display:none;" href="https://mastodon.gamedev.place/@eveyhedgehog">Mastodon</a>
     <link href="https://fonts.googleapis.com/css?family=Averia%20Libre" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>ScketchZone</title>
@@ -14,8 +15,6 @@
     <script type="text/javascript" src="./js/moment.js"></script>
     <script type="text/javascript" src="./js/mysides.js"></script>
     <script type="text/javascript" src="./js/kmntcheck.js"></script>
-  </head>
-  <body>
     <div id="content">
       <div style="height: 372px; margin-left: -22px; width: 828px;" id="banner"><a
 
@@ -27,16 +26,41 @@
         </div>
         <div id="mysides"></div>
         <div style="margin-left: 230px; margin-top: -519px;" id="postarea">
-          <div id="hooder"><img
+          <div id="hooder"><img src="./images/donutsteel.png" alt="Original Art"
 
-                src="./images/donutsteel.png" alt="Original Art" class = "rssButt" id = "origClicky"><img
+              class="rssButt" id="origClicky"><img src="./images/fanharder.png"
 
-                src="./images/fanharder.png" alt="Fan Art" class = "rssButt" id = "fanClicky"><img
+              alt="Fan Art" class="rssButt" id="fanClicky"><img src="./images/imaginethefullword.png"
 
-                src="./images/imaginethefullword.png" alt="Commissioned Art" class = "rssButt" id = "commClicky"></div>
+              alt="Commissioned Art" class="rssButt" id="commClicky"></div>
           <br>
-		  <a href="https://scketcht00n.tumblr.com/rss"><img src="./images/rss.png" style="width: 5%;height: auto;"></a>
-		  <div id= "status">(Comments aren't loaded yet)</div>
+          <div id="rssinfo" class="rssinfo">
+    <!-- Backdrop for closing the modal when clicking outside -->
+    <a href="#" class="rssinfoback"></a>
+
+    <!-- Modal content -->
+    <div class="rssinfobox">
+        <h2>What is RSS?</h2>
+        <p>RSS is a way to keep track of what gets posted to a website. Right now this website uses the RSS feed from my Art Tumblr.
+      <br><br>
+      A few ways you can follow this (or any RSS feed):
+          <br><br>
+          * <a href="https://feedrabbit.com/">Feedrabbit</a> (This will email updates to you)
+          <br>
+      * <a href="https://freshrss.org/">FreshRSS</a> (A website where you can see all the feeds you follow)
+      <br>
+      * <a href="https://monitorss.xyz/">MonitoRSS</a> (A Discord bot that posts to your server)
+      <br>
+      * <a href="https://github.com/DomicidalDesigns/DISrssCORD">DISrssCORD</a> (A python script that uses a Discord webhook to post to a server)
+      </p>
+        <a href="#" class="rssinfoclose">Close Message</a>
+    </div>
+</div>
+          <a href="https://scketcht00n.tumblr.com/rss"><img src="./images/rss.png"
+
+              style="width: 5%;height: auto;"></a><a href="#rssinfo">What is RSS?</a>
+          <div id="status">(Comments aren't loaded yet)</div>
+          
           <ul id="tumblrfeed">
             <li id="orig">
               <div id="artRss">
@@ -68,6 +92,7 @@
                             location.reload();
                         });
       </script> </div>
+            </li>
           </ul>
         </div>
       </div>
