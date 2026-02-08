@@ -21,11 +21,11 @@
           href="./index.html"> <span style="margin-left: -378px; height: 378px;"
 
             class="logolink"></span> </a></div>
-      <div style="width: 1008px; margin-left: -126px;" class="wrapper">
-        <div style="margin-left: 80px; width: 888px;" id="spangles"><br>
+      <div class="wrapper">
+        <div id="spangles"><br>
         </div>
         <div id="mysides"></div>
-        <div style="margin-left: 230px; margin-top: -519px;" id="postarea">
+        <div id="postarea">
           <div id="hooder"><img src="./images/donutsteel.png" alt="Original Art"
 
               class="rssButt" id="origClicky"><img src="./images/fanharder.png"
@@ -60,15 +60,15 @@
 
               style="width: 5%;height: auto;"></a><a href="#rssinfo">What is RSS?</a>
           <div id="status">(Comments aren't loaded yet)</div>
-          
+
           <ul id="tumblrfeed">
             <li id="orig">
               <div id="artRss">
                 <script>
                     pingURL();
-                    
+
                     var rssUrl = window.name;
-                                        
+
                     $('#artRss').FeedEk({
                         FeedUrl : rssUrl,
                             MaxCount : 8,
@@ -78,7 +78,7 @@
                             DateFormat:'MM/dd/yyyy',
                             DateFormatLang:'en'
                     });
-                    
+
                     $("#origClicky").click(function () {
                             window.name = "https://scketcht00n.tumblr.com/tagged/original art/rss";
                             location.reload();
